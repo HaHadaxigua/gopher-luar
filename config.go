@@ -38,7 +38,7 @@ func newConfig() *Config {
 
 // GetConfig returns the luar configuration options for the given *lua.LState.
 func GetConfig(L *lua.LState) *Config {
-	const registryKey = "github.com/layeh/gopher-luar"
+	const registryKey = "github.com/HaHadaxigua/gopher-luar"
 
 	registry := L.Get(lua.RegistryIndex).(*lua.LTable)
 	lConfig, ok := registry.RawGetString(registryKey).(*lua.LUserData)
